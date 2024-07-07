@@ -1,41 +1,12 @@
-# Simple Smart Contract Project
+# Starter Next/Hardhat Project
 
-## Overview
+After cloning the github, you will want to do the following to get the code running on your computer.
 
-This project demonstrates a simple Ethereum smart contract with two functions. The contract stores a message and a number, which can be updated and retrieved through the contract's functions.
+1. Inside the project directory, in the terminal type: npm i
+2. Open two additional terminals in your VS code
+3. In the second terminal type: npx hardhat node
+4. In the third terminal, type: npx hardhat run --network localhost scripts/deploy.js
+5. Back in the first terminal, type npm run dev to launch the front-end.
 
-## Smart Contract
-
-The smart contract is located in `contracts/SimpleContract.sol`. It has the following functions:
-- `setMessage(string memory _message)`
-- `setNumber(uint256 _number)`
-- `message()`
-- `number()`
-
-## Frontend
-
-The frontend is a simple HTML page that interacts with the smart contract using Web3.js. It displays the current values of the message and number stored in the contract and allows users to update them.
-
-## How to Run
-
-1. Clone the repository:
-    ```sh
-    git clone https://github.com/Dioswoah/Solidity1.git
-    cd Solidity1
-    ```
-
-2. Compile and deploy the contract using Truffle:
-    ```sh
-    truffle compile
-    truffle migrate
-    ```
-
-3. Open `frontend/index.html` in a browser to interact with the contract.
-
-## Video Walkthrough
-
-A video walkthrough of the project can be found [here](https://loom.com).
-
-## Deployment Details
-
-Contract Address: `YOUR_DEPLOYED_CONTRACT_ADDRESS`
+After this, the project will be running on your localhost. 
+Typically at http://localhost:3000/
